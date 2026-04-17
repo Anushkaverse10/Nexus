@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vantage — Elevating Brand Stories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="nav" id="mainNav">
+    <div class="nav__inner wrap">
+      <a href="index.html" class="nav__logo">VANTAGE</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html" class="nav__link active">Home</a>
+        <a href="pages/services.html" class="nav__link">Services</a>
+        <a href="pages/case-studies.html" class="nav__link">Case Studies</a>
+        <a href="pages/contact.html" class="nav__link">Contact</a>
+      </nav>
+      <a href="pages/contact.html" class="btn btn--outline nav__cta">Start a Project</a>
+      <button class="nav__burger" id="burgerBtn" onclick="toggleNav()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile drawer -->
+    <div class="nav__drawer" id="navDrawer">
+      <a href="index.html" onclick="toggleNav()">Home</a>
+      <a href="pages/services.html" onclick="toggleNav()">Services</a>
+      <a href="pages/case-studies.html" onclick="toggleNav()">Case Studies</a>
+      <a href="pages/contact.html" onclick="toggleNav()">Contact</a>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__left">
+        <span class="eyebrow">Digital Curators</span>
+        <h1 class="hero__title">
+          Elevating<br/>
+          <em>Brand Stories</em><br/>
+          With Intent.
+        </h1>
+        <p class="hero__body">
+          We don't just build interfaces. We curate experiences through rigorous precision and editorial authority.
+        </p>
+        <div class="hero__btns">
+          <a href="pages/case-studies.html" class="btn btn--solid">View Showcase</a>
+          <a href="pages/services.html" class="btn btn--ghost">The Methodology →</a>
+        </div>
+      </div>
+      <div class="hero__right">
+        <div class="hero__img-block">
+          <div class="hero__img hero__img--main img-placeholder c-navy">
+            <span>Brand Vision</span>
+          </div>
+          <div class="hero__img-pair">
+            <div class="hero__img hero__img--sm img-placeholder c-sky"><span>Strategy</span></div>
+            <div class="hero__img hero__img--sm img-placeholder c-amber"><span>Design</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SCROLLING TICKER ========== -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Script Writing</span><i>✦</i>
+      <span>Video Editing</span><i>✦</i>
+      <span>Digital Marketing</span><i>✦</i>
+      <span>Performance</span><i>✦</i>
+      <span>Product Design</span><i>✦</i>
+      <span>Script Writing</span><i>✦</i>
+      <span>Video Editing</span><i>✦</i>
+      <span>Digital Marketing</span><i>✦</i>
+      <span>Performance</span><i>✦</i>
+      <span>Product Design</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ========== TOOLKIT ========== -->
+  <section class="toolkit section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Expertise</span>
+        <h2 class="section-title">The Precision Toolkit</h2>
+        <p class="section-sub">A curated selection of technical and creative disciplines aimed at total brand transformation.</p>
+      </div>
+      <div class="toolkit__grid">
+        <div class="toolkit__card reveal">
+          <div class="toolkit__num">01</div>
+          <h3>Script Writing</h3>
+          <p>Articulating the core narrative of your brand through cinematic dialogue and strategic storytelling.</p>
+        </div>
+        <div class="toolkit__card reveal">
+          <div class="toolkit__num">02</div>
+          <h3>Video Editing</h3>
+          <p>High-end post-production that maintains the integrity of your visual language.</p>
+        </div>
+        <div class="toolkit__card reveal">
+          <div class="toolkit__num">03</div>
+          <h3>Digital Marketing</h3>
+          <p>Omnichannel strategies that place your message in the hands of the right curators.</p>
+        </div>
+        <div class="toolkit__card reveal">
+          <div class="toolkit__num">04</div>
+          <h3>Performance</h3>
+          <p>Data-driven scaling that respects the aesthetic soul of your campaigns.</p>
+        </div>
+        <div class="toolkit__card reveal">
+          <div class="toolkit__num">05</div>
+          <h3>Product Design</h3>
+          <p>Architecting digital ecosystems that prioritize user focus and high-end visual utility.</p>
+        </div>
+        <div class="toolkit__card toolkit__card--link reveal">
+          <a href="pages/services.html">Explore our design ethos →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SELECTED CASE STUDIES ========== -->
+  <section class="cases section section--tinted">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Selected Case Studies</span>
+        <h2 class="section-title">Work that speaks.</h2>
+      </div>
+      <div class="cases__grid">
+        <div class="cases__card cases__card--wide reveal">
+          <div class="cases__img img-placeholder c-navy">
+            <div class="cases__tag">Editorial Web Design / Branding</div>
+          </div>
+          <div class="cases__info">
+            <span class="cases__year">2024</span>
+            <h3>Lumière Atelier</h3>
+            <p>A luxury creative studio — full brand identity and editorial website.</p>
+          </div>
+        </div>
+        <div class="cases__card reveal">
+          <div class="cases__img img-placeholder c-amber">
+            <div class="cases__tag">Performance Marketing</div>
+          </div>
+          <div class="cases__info">
+            <span class="cases__year">2023</span>
+            <h3>Kinetic Retail</h3>
+            <p>Performance marketing and content strategy for a high-growth retail brand.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cases__cta">
+        <a href="pages/case-studies.html" class="btn btn--outline">View All Case Studies →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER ========== -->
+  <section class="cta-band">
+    <div class="wrap cta-band__inner">
+      <h2>Ready to refine<br/><em>your narrative?</em></h2>
+      <a href="pages/contact.html" class="btn btn--solid btn--light">Start a Project</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo">VANTAGE</span>
+        <p>Crafting digital authority for brands that lead.</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/services.html">Services</a></li>
+            <li><a href="pages/case-studies.html">Case Studies</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="pages/services.html">Script Writing</a></li>
+            <li><a href="pages/services.html">Video Editing</a></li>
+            <li><a href="pages/services.html">Digital Marketing</a></li>
+            <li><a href="pages/services.html">Product Design</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="pages/contact.html">hello@vantage.studio</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar wrap">
+      <p>© 2025 Vantage Studio. All rights reserved.</p>
+      <div class="footer__bar-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
