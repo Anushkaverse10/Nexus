@@ -1,6 +1,6 @@
 Forge Studio – Static Website
 Live Demo
-https://forge-studio-rose.vercel.appstatic-web/
+https://forge-studio-static-web-gdg-project.netlify.app/
 
 Project Overview
 
