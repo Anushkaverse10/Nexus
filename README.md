@@ -1,89 +1,132 @@
-# Forge Studio — Portfolio Website
+Live Demo
+https://forge-studio-rose.vercel.appstatic-web/
 
-A modern, responsive portfolio website built to showcase creative services, case studies, and brand identity work.
-Designed with a focus on **minimalism, typography, and structured layouts**.
+Project Overview
 
----
+This project is a static website consisting of four main pages:
 
-## Live Preview
+Home (index.html)
+Services
+Case Studies
+Contact
 
-deployed link :
-https://forge-studio-static-web-gdg-project.netlify.app/
+The website is designed to simulate a modern digital agency landing experience, with attention to typography, layout, and responsiveness.
 
----
-
-##  Features
-
-*  Clean and modern UI inspired by high-end agency websites
-*  Fully responsive design (mobile, tablet, desktop)
-*  Structured multi-page layout:
-
-  * Home
-  * Services
-  * Case Studies
-  * Contact
-*  Service showcase with image + text layout
-*  Accordion-style services (expandable sections)
-*  Case study cards with visuals
-*  Smooth navigation and reusable components
-*  Consistent design system (colors, spacing, typography)
-
----
-
-## Tech Stack
-
-* **HTML5**
-* **CSS3 (Custom styling)**
-* **JavaScript (Vanilla JS)**
-
----
-
-## Project Structure
-
-```
-static-web/
 │
-├── css/
-│   ├── base.css
-│   ├── home.css
-│   ├── services.css
-│   ├── case-studies.css
-│   └── contact.css
+├── index.html                # Entry point (homepage)
 │
 ├── pages/
 │   ├── services.html
 │   ├── case-studies.html
-│   ├── contact.html
+│   └── contact.html
 │
-├── images/
-│   ├── hero-img.jpg
-│   ├── project1.jpg
-│   ├── project2.jpg
-│   ├── project3.jpg
-│   └── ...
+├── css/
+│   ├── base.css              # Global styles (navbar, footer, variables)
+│   ├── home.css              # Homepage-specific styles
+│   ├── services.css
+│   ├── case-studies.css
+│   └── contact.css
 │
 ├── js/
-│   └── app.js
+│   └── app.js                # All interactivity
 │
-└── index.html
-```
-## Future Improvements
+└── images/                  # Project assets
 
-* Add animations (GSAP / Framer Motion style effects)
-* Convert to React for component-based structure
-* Add backend contact form (Node.js / Firebase)
-* Improve accessibility (ARIA, semantic tags)
+How It Works
+ Entry Point
 
----
+The website starts from index.html, which acts as the main entry point.
 
-## Author
+ CSS Architecture
+base.css
+Contains global styles
+Navbar, footer, buttons
+CSS variables (colors, fonts, spacing)
+Page-specific CSS
+Each page has its own stylesheet
+Keeps code clean and modular
+Avoids unnecessary CSS loading
+ Layout System
+CSS Grid
+Used for major layouts (hero section, sections with multiple columns)
+Flexbox
+Used for smaller layouts (navbar, buttons, rows)
+ Responsive Design
+Media queries at:
+880px
+560px
+Features:
+Layout stacks on smaller screens
+Navbar becomes hamburger menu
+Content adapts for mobile usability
+ JavaScript Functionality (app.js)
 
-**Anushka Mukherjee*
+The entire interactivity is handled by a single JavaScript file.
 
----
+1️⃣ Navbar Scroll Effect
+Adds shadow when user scrolls
+Improves visual feedback
+2️⃣ Mobile Navigation
+Hamburger menu opens full-screen panel
+Functions used:
+openMenu()
+closeMenu()
+3️⃣ Scroll Reveal Animation
+Uses IntersectionObserver
+Adds .visible class when elements enter viewport
+More efficient than scroll event listeners
+4️⃣ Services Accordion
+Expand/collapse service sections
+Controlled via toggleSvc() function
+5️⃣ Contact Form Validation
+Checks required fields (name, email)
+Shows:
+Error messages
+Success message
+Resets form after submission
+ Design Features
+Clean and modern UI
+Google Fonts:
+Space Grotesk (body)
+Lora (headings)
+Consistent color system using CSS variables
+Smooth animations and transitions
+ Pages Breakdown
+ Home
+Hero section
+Scrolling ticker
+Services preview
+Case studies preview
+Call-to-action
+ Services
+Accordion-based layout
+Expandable service details
+ Case Studies
+Portfolio-style grid
+Testimonial section
+ Contact
+Interactive form
+Validation + success feedback
+ Key Learnings
+Structuring multi-page static websites
+Separating global vs page-specific CSS
+Using Grid vs Flexbox effectively
+Implementing IntersectionObserver
+Handling responsiveness with media queries
+Managing clean folder architecture
+ Tech Stack
+HTML5
+CSS3 (Custom styling, Flexbox, Grid)
+JavaScript (Vanilla JS)
+ Future Improvements
+Backend integration for contact form
+Authentication system
+Database integration
+Animations with libraries (GSAP / Framer Motion)
+ Author
 
-## ⭐ If you like this project
+Anushka Mukherjee
 
-Give it a star ⭐ and feel free to fork it!
+Final Note
 
----
+This project demonstrates strong fundamentals in frontend development, focusing on clean structure, responsive design, and interactive UI without using any frameworks.
