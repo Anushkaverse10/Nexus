@@ -61,5 +61,6 @@ Backend integration
 Authentication system
 Database connectivity
 
-
+Author:
+Anushka Mukherjee
 
